@@ -88,8 +88,7 @@ ggplot(data = centroids) +
   labs(
     title = "Crude → Population-Weighted Centroids by TA",
     x = "Longitude Δ", y = "Latitude Δ"
-  ) +
-  theme_minimal()
+  )
 
 ggsave("TA_centroids_all_types.png", plot = last_plot(), width = 8, height = 6, units = "in", dpi = 300)
 
@@ -108,8 +107,9 @@ geometric_delta_projection <- centroids %>%
 # PLOT TA_GEOMETRIC TO MESHBLOCK_POP_WEIGHTED DELTA ON MAP OF NZ
 ggplot() +
   geom_sf(data = geometric_delta_projection, aes(fill = TA_geometricToweighted_km), color = "black") +
-  scale_fill_viridis_c(option = "plasma", name = "TA geom. to MB pop. weighted (km)") +
-  theme_minimal()
+  scale_fill_viridis_c(option = "plasma", name = "TA geom. to MB pop. weighted (km)")
+  
+  ggsave("TA_centroids_delta_NZ_MAP.png", plot = last_plot(), width = 8, height = 6, units = "in", dpi = 300)
 
 # Why are some TAs geometries enlarged (e.g. Auckland)??
 
