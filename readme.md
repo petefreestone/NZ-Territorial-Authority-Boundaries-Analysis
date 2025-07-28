@@ -64,7 +64,7 @@ If population data is unavailable at meshblock level, using the **mean meshblock
 ---
 
 ## 📂 Technologies Used  
-- **R** (`sf`, `ggplot2`, `dplyr`, `patchwork`, `geosphere`)  
+- **R** (`sf`, `ggplot2`, `dplyr`, `geosphere`)  
 - Spatial vector data (TA and meshblock shapefiles from Stats NZ)  
 - CSV-based population concordance data  
 - Haversine distance calculations  
