@@ -1,6 +1,5 @@
 # 🗺️ NZ Territorial Authority Boundaries Analysis  
-**R Spatial Analysis Project | 2025**  
-[GitHub Repository (private/local)](https://github.com/pfre017/nz-territorial-authority-boundaries-analysis)
+**R Spatial Analysis Project | 2025**
 
 ---
 
